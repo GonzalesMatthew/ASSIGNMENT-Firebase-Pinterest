@@ -1,12 +1,23 @@
 @import "~bootstrap/scss/bootstrap";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 @import 'vars';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Raleway&display=swap');
+// font-family: 'Poppins', sans-serif;
+// font-family: 'Raleway', sans-serif;
 
 body {
-  background-color: antiquewhite;
-  color: brown;
+  background-color: #e3f0e9;
+  color: rgb(7, 4, 4);
+  font-family: 'Poppins', sans-serif;
   text-align: center;
   margin-top: 100px;
+}
+
+// #container{
+//   background-color: #f0e2e2;
+// }
+.card{
+  background-color: #edf0f5;
 }
 
 $letters:
@@ -17,10 +28,22 @@ $letters:
   "e" $e,
   "r" $r,
   "e2" $e2,
-  "s" $s;
+  "s" $s,
+  "t2" $t2,
+  "b2" $b2,
+  "o2" $o2,
+  "a2" $a2,
+  "r2" $r2,
+  "d2" $d2,
+  "s2" $s2,
+  "p3" $p3,
+  "i3" $i3,
+  "n3" $n3,
+  "s3" $s3;
+
 
 @each $letter, $hex in $letters {
-  .#{$letter}-nav {
+  .#{$letter} {
     color: $hex;
   }
 }

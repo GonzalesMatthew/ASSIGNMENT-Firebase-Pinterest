@@ -23,6 +23,10 @@ const domEvents = (user) => {
     if (e.target.id.includes('back-to-boards')) {
       getBoards(user).then((boards) => showBoards(boards));
     }
+    // ADD CLICK EVENT FOR GOING BACK TO ALL BOARDS UPON CLICKING BRAND
+    if (e.target.id.includes('brand')) {
+      getBoards(user).then((boards) => showBoards(boards));
+    }
 
     // CLICK EVENT FOR DELETING A BOARD
     if (e.target.id.includes('delete-board')) {
@@ -52,7 +56,6 @@ const domEvents = (user) => {
     if (e.target.id.includes('delete-pin')) {
       const firebaseKey = e.target.id.split('--')[1];
       deletePin(firebaseKey).then((pinsArray) => showPins(pinsArray));
-      // deletePin(firebaseKey).then((pinsArray) => showPins(pinsArray));
     }
 
     // CLICK EVENT FOR SHOWING ADD-PIN FORM
