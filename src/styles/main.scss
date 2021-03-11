@@ -28,10 +28,22 @@ $letters:
   "e" $e,
   "r" $r,
   "e2" $e2,
-  "s" $s;
+  "s" $s,
+  "t2" $t2,
+  "b2" $b2,
+  "o2" $o2,
+  "a2" $a2,
+  "r2" $r2,
+  "d2" $d2,
+  "s2" $s2,
+  "p3" $p3,
+  "i3" $i3,
+  "n3" $n3,
+  "s3" $s3;
+
 
 @each $letter, $hex in $letters {
-  .#{$letter}-nav {
+  .#{$letter} {
     color: $hex;
   }
 }

@@ -2,7 +2,14 @@ const showBoards = (array) => {
   document.querySelector('#app').innerHTML = `
   <button class="my-4 btn btn-success" id="add-board">Create New Board</button>
     <div id="container">
-      <h1>Boards</h1>
+      <h1>
+          <span class="b2">B</span>
+          <span class="o2">o</span>
+          <span class="a2">a</span>
+          <span class="r2">r</span>
+          <span class="d2">d</span>
+          <span class="s2">s</span>
+      </h1>
       <div id="user-container" class="row justify-content-center p-5 mx-5 mt-3 mb-5 rounded shadow-lg">
       </div>
     </div>`;
