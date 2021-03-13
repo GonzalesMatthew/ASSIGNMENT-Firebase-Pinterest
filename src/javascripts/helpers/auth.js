@@ -2,6 +2,7 @@ import firebase from 'firebase/app';
 import 'firebase/auth';
 import showBoards from '../components/boards';
 import domEvents from '../components/events/domEvents';
+import navEvents from '../components/events/navEvents';
 import home from '../components/home';
 import loginButton from '../components/loginButton';
 import logoutButton from '../components/logoutButton';
@@ -16,9 +17,9 @@ const checkLoginStatus = () => {
       // person is logged in do something...
       domEvents(user.uid);
       navBar();
+      navEvents(user.uid);
       getBoards(user.uid).then((boards) => showBoards(boards));
       logoutButton();
-      // console.warn(user.uid);
     } else {
       // person is NOT logged in
       navBar();

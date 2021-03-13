@@ -32,4 +32,14 @@ const createBoard = (boardObject) => new Promise((resolve, reject) => {
     }).catch((error) => reject(error));
 });
 
-export { getBoards, deleteBoard, createBoard };
+// SEARCH BOARD
+const searchBoard = (uid, searchValue) => new Promise((resolve, reject) => {
+  getBoards(uid).then((boardsArray) => {
+    const searchItems = boardsArray.filter((s) => s.title.toLowerCase().includes(searchValue));
+    resolve(searchItems);
+  }).catch((error) => reject(error));
+});
+
+export {
+  getBoards, deleteBoard, createBoard, searchBoard
+};
