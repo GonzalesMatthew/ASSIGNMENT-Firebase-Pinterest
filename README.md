@@ -11,7 +11,7 @@
 ### List of features                                                
   Create, view, delete, and update pins and boards. Search bar to find boards, dark mode button. Google user authentication.
 ### Screenshots of your project
-![App Screenshot](src/images/mg-firebase-pinterest.png)
+![App Screenshot](images/mg-firebase-pinterest.png)
 ### List of contributors and links to their GH profiles
 @GonzalesMatthew
 ### Link to Loom video walkthrough of your app
